@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F7F0;
+    color: black;
+  }
+  
+  header {
+    background-color: #18B7BE;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    color: #F9F7F0;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #178CA4;
+  }
+  
+  section {
+    padding: 30px;
+    text-align: center;
+  }
+
+  #home {
+    background-color: #8feff4;
+  }
+
+  #styles {
+    background-color: #18B7BE;
+  }
+
+  #classes {
+    background-color: #178CA4;
+  }
+
+  #benefits {
+    background-color: #18B7BE;
+  }
+
+  #about {
+    background-color: #8feff4;
+  }
+  
+  h1, h2 {
+    color: #072A40;
+    font-size: 2.5vw;
+  }
+  
+  
+  
+  .home-box {
+    display: inline-block;
+    width: calc(25% - 75px); /* Adjust width as needed */
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .red {
+    background-color: #FF6347; /* Red color */
+  }
+  
+  .blue {
+    background-color: #1E90FF; /* Blue color */
+  }
+  
+  .green {
+    background-color: #32CD32; /* Green color */
+  }
+  
+  .yellow {
+    background-color: #FFD700; /* Yellow color */
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .div1 {
+    padding: 5%;
+    width: 35%;
+    float: left;
+    text-align: center;
+    height: 15%;
+    color: black;
+    margin: 1%;
+  }
+  
+  .div2 {
+    padding: 5%;
+    width: 55%;
+    float: left;
+    text-align: center;
+    height: 15%;
+    color: black;
+    margin: 1%;
+    font-size: 2.5vh;
+
+  }
+  
+  img {
+    border-radius: 50%;
+    border-color: #072A40;
+    border-width: 5px;
+  }
+  
+  h4 {
+    font-size: 2.5vw;
+  }
+  
+  .read-more-btn {
+    font-family: Arial, sans-serif;
+    background-color: #F9F7F0;
+    color: #072A40;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #178CA4;
+  }
+  
+  .dance-card {
+    display: inline-block;
+    width: calc(25% - 75px); /* Adjust width as needed */
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .dance-card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .dance-card h3 {
+    background-color: #072A40;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .div3 {
+    padding: 5%;
+    width: 90%;
+    float: left;
+    text-align: center;
+    height: 15%;
+    color: black;
+    margin: 0 auto;
+    font-size: 2.5vh;
+
+  }
+
+  
+  footer {
+    background-color: #072A40;
+    color: #F9F7F0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-info, .subscription-form {
+    margin-bottom: 20px;
+    color: #F9F7F0;
+  }
+  
+  .subscription-form input[type="email"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .subscription-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #18B7BE;
+    border: none;
+    color: #F9F7F0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .subscription-form input[type="submit"]:hover {
+    background-color: #178CA4;
+  }
+  

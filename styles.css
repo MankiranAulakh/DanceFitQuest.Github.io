@@ -15,6 +15,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   nav ul li {
@@ -60,9 +61,26 @@ body {
   h1, h2 {
     color: #072A40;
     font-size: 2.5vw;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  h1:hover, h2:hover {
+    transform: scale(1.1);
   }
   
   
+  
+  @keyframes continuous-scale {
+    0% {
+      transform: scale(1); /* Start at normal scale */
+    }
+    50% {
+      transform: scale(1.05); /* Scale up by 10% halfway through */
+    }
+    100% {
+      transform: scale(1); /* Reset scale at the end */
+    }
+  }
   
   .home-box {
     display: inline-block;
@@ -74,7 +92,11 @@ body {
     text-align: center;
     font-size: 16px;
     color: white;
+    font-weight: bold;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+    animation: continuous-scale 5s infinite; /* Apply continuous animation */
   }
+  
   
   .red {
     background-color: #FF6347; /* Red color */
@@ -112,7 +134,7 @@ body {
   }
   
   .div2 {
-    padding: 5%;
+    padding: 1%;
     width: 55%;
     float: left;
     text-align: center;
@@ -120,7 +142,9 @@ body {
     color: black;
     margin: 1%;
     font-size: 2.5vh;
-
+    background-color: rgba(249, 247, 240, 0.5);
+    border-radius: 10px;
+    
   }
   
   img {
@@ -130,7 +154,7 @@ body {
   }
   
   h4 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   
   .read-more-btn {
@@ -143,6 +167,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: bold;
   }
   
   .read-more-btn:hover {
@@ -215,3 +240,118 @@ body {
     background-color: #178CA4;
   }
   
+  p {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+  /* For tablets (768px) */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for header and navigation */
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    font-size: 14px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  /* Adjustments for sections */
+  section {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .div1, .div2 {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .read-more-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .dance-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* For mobiles (480px) */
+@media only screen and (max-width: 480px) {
+  /* Adjustments for header and navigation */
+  nav ul {
+    font-size: 12px;
+  }
+
+  nav ul li a {
+    padding: 8px;
+  }
+
+  /* Adjustments for sections */
+  section {
+    padding: 15px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .div1, .div2 {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .read-more-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .dance-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-box {
+    width: 90%; /* Adjust to your preference */
+    margin: 0 auto;
+  }
+
+  .intro {
+    display: block;
+  }
+}
+
